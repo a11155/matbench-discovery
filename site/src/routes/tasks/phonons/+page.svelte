@@ -1,6 +1,6 @@
 <script lang="ts">
   import { MetricScatter, MetricsTable } from '$lib'
-  import { ALL_METRICS, METADATA_COLS } from '$lib/labels'
+  import { ALL_METRICS, HYPERPARAMS, METADATA_COLS } from '$lib/labels'
 
   // Default column visibility
   let visible_cols: Record<string, boolean> = $state({
@@ -33,14 +33,7 @@
   </p>
 
   <MetricScatter
-    x_prop={METADATA_COLS.model_params}
-    y_prop={ALL_METRICS.κ_SRME}
-    style="height: 400px;"
-  />
-
-  <h3>κ<sub>SRME</sub> over time</h3>
-  <MetricScatter
-    x_prop={METADATA_COLS.date_added}
+    x_prop={HYPERPARAMS.model_params}
     y_prop={ALL_METRICS.κ_SRME}
     style="height: 400px;"
   />

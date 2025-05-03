@@ -11,6 +11,7 @@
     columns?: Metric[]
     sort_hint?: string
     style?: string | null
+    class?: string
     cell?: Snippet<[CellSnippetArgs]>
     special_cells?: Record<string, Snippet<[CellSnippetArgs]>>
     controls?: Snippet
@@ -25,6 +26,7 @@
     columns = [],
     sort_hint = ``,
     style = null,
+    class: class_name = ``,
     cell,
     special_cells,
     controls,
@@ -183,7 +185,7 @@
   </div>
 {/if}
 
-<div class="table-container" {style} use:titles_as_tooltips>
+<div class="table-container {class_name}" {style} use:titles_as_tooltips>
   <table class:fixed-header={fixed_header} class="heatmap heatmap-table">
     <thead>
       <!-- Don't add a table row for group headers if there are none -->
