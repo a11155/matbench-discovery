@@ -1,0 +1,10 @@
+nohup python test_us_kappa.py --gpu 0 --left 0 --right 10 > kappa_0_10.log 2>&1 &
+nohup python test_us_kappa.py --gpu 1 --left 10 --right 20 > kappa_10_20.log 2>&1 &
+nohup python test_us_kappa.py --gpu 2 --left 20 --right 30 > kappa_20_30.log 2>&1 &
+nohup python test_us_kappa.py --gpu 3 --left 30 --right 40 > kappa_30_40.log 2>&1 &
+nohup python test_us_kappa.py --gpu 4 --left 40 --right 50 > kappa_40_50.log 2>&1 &
+nohup python test_us_kappa.py --gpu 5 --left 50 --right 60 > kappa_50_60.log 2>&1 &
+nohup python test_us_kappa.py --gpu 6 --left 60 --right 70 > kappa_60_70.log 2>&1 &
+nohup python test_us_kappa.py --gpu 7 --left 70 --right 80 > kappa_70_80.log 2>&1 &
+nohup python test_us_kappa.py --gpu 8 --left 80 --right 90 > kappa_80_90.log 2>&1 &
+nohup python test_us_kappa.py --gpu 9 --left 90 --right -1 > kappa_90_end.log 2>&1 &

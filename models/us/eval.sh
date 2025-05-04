@@ -1,0 +1,10 @@
+nohup python test_sevennet.py --gpu 0 --left 0 --right 25000 > eval2_0_25000.log 2>&1 &
+nohup python test_sevennet.py --gpu 1 --left 25000 --right 50000 > eval2_25000_50000.log 2>&1 &
+nohup python test_sevennet.py --gpu 2 --left 50000 --right 75000 > eval2_50000_75000.log 2>&1 &
+nohup python test_sevennet.py --gpu 3 --left 75000 --right 100000 > eval2_75000_100000.log 2>&1 &
+nohup python test_sevennet.py --gpu 4 --left 100000 --right 125000 > eval2_100000_125000.log 2>&1 &
+nohup python test_sevennet.py --gpu 5 --left 125000 --right 150000 > eval2_125000_150000.log 2>&1 &
+nohup python test_sevennet.py --gpu 6 --left 150000 --right 175000 > eval2_150000_175000.log 2>&1 &
+nohup python test_sevennet.py --gpu 7 --left 175000 --right 200000 > eval2_175000_200000.log 2>&1 &
+nohup python test_sevennet.py --gpu 8 --left 200000 --right 225000 > eval2_200000_225000.log 2>&1 &
+nohup python test_sevennet.py --gpu 9 --left 225000 --right -1 > eval2_225000_250000.log 2>&1 &
